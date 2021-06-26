@@ -3,10 +3,10 @@ install:
 		@poetry install
 
 lint:
-		poetry run flake8 page_loader
+		poetry run flake8 task_manager
 
 test:
-		poetry run pytest -q --cov=page_loader --cov-report xml tests/
+		poetry run pytest -q --cov=task_manager --cov-report xml tests/
 
 build:
 		poetry build
